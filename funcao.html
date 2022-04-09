@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+<script>
+
+var nomes = ["igor", "cesar", "pedro"];
+var notasA = [7.7, 7.2, 5.4];
+var notasB = [8.0, 5.9, 4.0];
+
+function media(n1, n2){
+
+return (n1 + n2) / 2;
+
+}
+
+function passou(media) {
+
+if(media > 7){
+
+return "Aprovado";
+
+}else {
+
+return "Reprovado";
+}
+
+}
+
+for (var index in nomes) {
+
+var nota1 = notasA[index];
+var nota2 = notasB[index];
+
+var m = media(nota1, nota2);
+
+document.write(nomes[index] +
+" - " +
+nota1  +
+" - " +
+nota2  +
+" - " +
+m + 
+" - " +
+passou(m));
+
+}
+
+
+
+</script>
+</body>
+</html> 
