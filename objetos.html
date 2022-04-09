@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+<script>
+
+function calcMedia() {
+  return (this.notas[0] + this.notas[1]) / 2;
+}
+
+var aluno = {
+  nome: "Igor",
+  notas: [0, 9],
+
+  media: calcMedia
+}
+
+var alunos1 = {
+  nome : "Jao",
+  notas: [9, 5],
+
+  media: calcMedia
+}
+
+document.write("nome do aluno " + aluno.nome)
+document.write(" e nota " + aluno.media());
+document.write("<hr>");
+document.write("nome do aluno " + alunos1.nome)
+document.write(" e nota " + alunos1.media());
+
+
+
+</script>
+</body>
+</html> 
