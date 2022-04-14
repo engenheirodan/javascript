@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <script>
+
+    let pessoas = ["Igor", "Jose", "Marcos", "Pamela"]
+ 
+   function sortear(){
+   let np = pessoas.length;
+   let ns = Math.floor(Math.random() * np);
+   document.getElementById("d").innerHTML = pessoas[ns];
+ }
+
+/* 
+ function sortear(){
+ let np = 100;
+ let ns = Math.round(Math.random() * np);
+ document.getElementById("d").innerHTML = ns;
+}
+*/
+
+  </script>
+  
+  <style>
+  
+  body{
+
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .contagem{
+
+    font-size: 90px;
+  }
+  button{
+    border: 1px solid red;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+  }
+  
+
+  </style>
+  <body>
+   <h1 id="d">Vai Aparecer Aqui</h1>
+   <button onclick="sortear()">Sortear</button>
+  </body>
+</html>
