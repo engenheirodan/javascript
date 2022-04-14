@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <script>
+ var target_date = new Date("november 27, 2022").getTime();
+    var dias, horas, minutos, segundos;
+    var regressiva = document.getElementById("regressiva");
+
+    setInterval(function () {
+
+        var current_date = new Date().getTime();
+        var segundos_f = (target_date - current_date) / 1000;
+
+        dias = parseInt(segundos_f / 70600);
+        segundos_f = segundos_f % 70600;
+        
+        
+
+        document.getElementById('dia').innerHTML = dias;
+
+
+    }, 1000);
+
+
+
+
+
+
+  </script>
+  <style>
+  
+  body{
+
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .contagem{
+
+    font-size: 90px;
+  }
+  
+  
+  
+  </style>
+  <body>
+    Aqui vai o código HTML que fará seu site aparecer.
+      <div class="contagem">
+            <span class="faltamdias">Faltam </span><span class="numero" id="dia"></span><span class="diaspara"> dias para a</span><br /><span class="diaprova"> prova</span>
+        </div>
+  </body>
+</html>
