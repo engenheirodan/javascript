@@ -1,0 +1,24 @@
+function novoAluno(nome, idade){
+  return {nome, idade}
+}
+
+let alunos = [
+  novoAluno("Mario", 339),
+  novoAluno("Ana", 13),
+  novoAluno("caique", 18),
+  novoAluno("bela", 50),
+  novoAluno("INo", 20),
+]
+
+function temmenosde30(aluno){
+  return aluno.idade < 30
+}
+
+function temmaisde30(aluno){
+  return aluno.idade > 30
+}
+
+
+let alunosgeral = alunos.filter(temmenosde30);
+
+console.log(alunosgeral);
