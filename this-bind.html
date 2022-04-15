@@ -1,0 +1,19 @@
+function geral(){
+  console.log(this.sound);
+}
+
+let dog = {
+  sound: "Au Au",
+  speak: geral
+}
+
+let cat = {
+ sound: "miau",
+ speak: geral 
+}
+//dog.speak
+//cat.speak
+
+let bindedFunction = geral.bind(cat);
+
+bindedFunction();
