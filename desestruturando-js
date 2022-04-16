@@ -1,0 +1,30 @@
+//Desestruturar Objetose Array em outras variveis e em outros elementos
+
+var aluno = {
+  matricula: 234,
+  nome: "Marcos",
+  telefone: 889438932,
+  cidade: "São Paulo"
+}
+
+var aluno1 = {
+  matricula: 682,
+  nome: "Dina",
+  telefone: 889438932,
+  cidade: "Brasilia"
+}
+
+var aluno2 = {
+  matricula: 999,
+  nome: "Ana",
+  telefone: 889438932,
+  cidade: "Rio de Janeiro"
+}
+
+var alunos = [aluno, aluno1, aluno2]
+
+var [marcos, ...outros] = alunos
+
+console.log(marcos)
+
+console.log(outros)
