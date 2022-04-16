@@ -1,0 +1,9 @@
+//spread oṕerator
+// Ele aproveita um objeto existente para criar um novo objeto ou array
+var notas_turma1 =[9, 8, 7, 6];
+
+var notas_turmas2 = [2, 4, 5, 6];
+
+var todas_notas = [...notas_turma1, ...notas_turmas2]
+
+console.log(todas_notas)
