@@ -1,0 +1,12 @@
+/*Numero do cartao de credito*/
+let cartao = '89748489390384894';
+
+/*Selecionar do 0 ao 3 */
+let lastDigits = cartao.slice(0, 3);
+
+/*colocando asteristicos*/
+let mask = lastDigits.padEnd(16, '*');
+
+console.log('Este é o seu cartão? ' + mask);
+
+  
